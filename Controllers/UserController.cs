@@ -18,14 +18,18 @@ namespace BackendandAuthAPI.Controllers
             _authContext = appDbContex;
 
         }
-
+        public class AuthModel
+        {
+            public string Username { get; set; }
+            public string Password { get; set; }
+        }
 
         [HttpPost("authenticate")]
-        public async Task<IActionResult> Authenticate([FromBody] User userObj)
+        public async Task<IActionResult> Authenticate([FromBody] AuthModel userObj)
         {
             if (userObj == null) return BadRequest();
             var user = await _authContext.Users.FirstOrDefaultAsync(x => x.Username == userObj.Username && x.Password == userObj.Password);
-            if (user == null) return NotFound(new { Message = "User nor Found!" });
+            if (user == null) return NotFound(new { Message = "User not Found!" });
 
             return Ok(
                 new
@@ -33,7 +37,7 @@ namespace BackendandAuthAPI.Controllers
                     Message = "Login successful"
                 });
         }
-            [HttpPost("register")]
+        [HttpPost("register")]
 
             public async Task<IActionResult> RegisterUser([FromBody] User userObj)
             {

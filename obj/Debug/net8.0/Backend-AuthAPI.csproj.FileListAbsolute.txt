@@ -135,3 +135,4 @@ D:\bookstore\AngularAuthAPI\Backend-AuthAPI\Backend-AuthAPI\obj\Debug\net8.0\ref
 D:\bookstore\AngularAuthAPI\Backend-AuthAPI\Backend-AuthAPI\obj\Debug\net8.0\Backend-AuthAPI.pdb
 D:\bookstore\AngularAuthAPI\Backend-AuthAPI\Backend-AuthAPI\obj\Debug\net8.0\Backend-AuthAPI.genruntimeconfig.cache
 D:\bookstore\AngularAuthAPI\Backend-AuthAPI\Backend-AuthAPI\obj\Debug\net8.0\ref\Backend-AuthAPI.dll
+D:\bookstore\AngularAuthAPI\Backend-AuthAPI\Backend-AuthAPI\obj\Debug\net8.0\Backend-AuthAPI.sourcelink.json
